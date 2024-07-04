@@ -611,6 +611,11 @@ output "azs" {
   description = "A list of availability zones specified as argument to this module"
   value       = var.azs
 }
+data "aws_region" "current" {} # data.aws_region.current.name
+output "region" {
+  description = "Details about selected AWS region"
+  value       = data.aws_region.current.name
+}
 
 output "name" {
   description = "The name of the VPC specified as argument to this module"
