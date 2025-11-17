@@ -64,7 +64,7 @@ resource "aws_vpc_ipv4_cidr_block_association" "this" {
 }
 
 ################################################################################
-# DHCP Options Set
+# DHCP Options Set - test
 ################################################################################
 
 resource "aws_vpc_dhcp_options" "this" {
